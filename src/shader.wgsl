@@ -8,3 +8,9 @@ var<uniform> material: CustomMaterial;
 var color_texture: texture_2d<f32>;
 @group(1) @binding(2)
 var color_sampler: sampler;
+
+@fragment
+fn fragment(
+) -> @location(0) vec4<f32> {
+    return vec4<f32>(1.0, 0.0, 0.0, 1.0); // Red color
+}
