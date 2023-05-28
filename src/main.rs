@@ -56,6 +56,6 @@ pub struct CustomMaterial {
 
 impl Material2d for CustomMaterial {
     fn fragment_shader() -> ShaderRef {
-        include_str!("shader.wgsl").into()
+        "shaders/custom_material.wgsl".into()
     }
 }
